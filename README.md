@@ -2,6 +2,8 @@
 
 A simple Express.js chatbot server powered by Google Gemini (gemini-2.5-flash). Responds in Indonesian by default.
 
+![alt text](assets/image.png)
+
 ## Requirements
 
 - Node.js 18+
