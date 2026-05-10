@@ -1,20 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gemini AI Chatbot</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Data Analyst Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Gemini AI Chatbot</h1>
-    <div id="chat-box" class="chat-box"></div>
-    <form id="chat-form">
-      <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" required />
-      <button type="submit">Send</button>
-    </form>
-  </div>
-  <script src="script.js"></script>
+    <div class="dashboard-container">
+        
+        <!-- Main Panel: Data Visualization & Metrics -->
+        <main class="data-panel">
+            <header class="panel-header">
+                <h1>Monthly Sales & Engagement Metrics</h1>
+                <p>Overview of core performance indicators.</p>
+            </header>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h3>Total Revenue</h3>
+                    <p class="value">$124,500</p>
+                    <p class="trend positive">↑ 12.5% vs last month</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Active Users</h3>
+                    <p class="value">8,432</p>
+                    <p class="trend positive">↑ 5.2% vs last month</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Churn Rate</h3>
+                    <p class="value">2.1%</p>
+                    <p class="trend negative">↓ 0.4% vs last month</p>
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <div class="chart-placeholder">
+                    <p>[ Data Visualization Placeholder ]</p>
+                    <div class="mock-chart"></div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Sidebar Panel: AI Chat Interface -->
+        <aside class="chat-panel">
+            <div class="chat-header">
+                <h2>Gemini Data Assistant</h2>
+                <p>Ask me about these metrics</p>
+            </div>
+            
+            <div id="chat-box" class="chat-box">
+                <!-- Messages will be injected here by script.js -->
+                <div class="message bot">Hello! I'm your AI data assistant. Would you like me to summarize the performance trends on the left?</div>
+            </div>
+            
+            <form id="chat-form" class="chat-form">
+                <input type="text" id="user-input" placeholder="Ask about the data..." autocomplete="off" required />
+                <button type="submit">Send</button>
+            </form>
+        </aside>
+        
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
